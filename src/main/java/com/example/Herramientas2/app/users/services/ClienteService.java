@@ -19,6 +19,8 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-
+    public Cliente create(Cliente cliente){
+        return clienteRepository.save(cliente);
+    }
 
 }

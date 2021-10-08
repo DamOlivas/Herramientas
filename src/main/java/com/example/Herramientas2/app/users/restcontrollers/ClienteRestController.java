@@ -23,8 +23,8 @@ public class ClienteRestController {
     }
 
     @PostMapping
-    public String create(@RequestBody String Nombre){
-        return Nombre;
+    public Cliente create(@RequestBody Cliente cliente){
+        return clienteService.create(cliente);
     }
 
     @GetMapping
