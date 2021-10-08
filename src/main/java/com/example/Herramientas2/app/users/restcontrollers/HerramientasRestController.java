@@ -1,11 +1,10 @@
 package com.example.Herramientas2.app.users.restcontrollers;
 
-
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/users")
-public class UserRestController {
+@RequestMapping("/Herramientas")
+public class HerramientasRestController {
 
     @GetMapping("/{id}")
     public Integer findById(@PathVariable("id")Integer id){
@@ -13,8 +12,8 @@ public class UserRestController {
     }
 
     @PostMapping
-    public String create(@RequestBody String usuario){
-        return usuario;
+    public String create(@RequestBody String Tipo){
+        return Tipo;
     }
 
 }
