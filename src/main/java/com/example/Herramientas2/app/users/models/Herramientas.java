@@ -12,11 +12,11 @@ public class Herramientas {
     @SequenceGenerator(name = "herramientas_seq_gen", sequenceName = "herramientas_id_seq", allocationSize = 1)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "Tipo", columnDefinition = "varchar (25)", nullable = false, unique = false)
+    @Column(name = "Tipo", columnDefinition = "varchar (25)", nullable = false, unique = true)
     private String Tipo;
-    @Column(name = "Descripcion", columnDefinition = "varchar (70)", nullable = false, unique = false)
+    @Column(name = "Descripcion", columnDefinition = "varchar (70)", nullable = false, unique = true)
     private String Descripcion;
-    @Column(name = "Cantidad", columnDefinition = "Integer" , nullable = false, unique = false)
+    @Column(name = "Cantidad", columnDefinition = "Integer")
     private Integer Cantidad;
 
     public Herramientas(){

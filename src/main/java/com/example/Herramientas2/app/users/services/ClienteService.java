@@ -19,6 +19,10 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
+    public Cliente findById(Integer id){
+        return clienteRepository.findById(id).get();
+    }
+
     public Cliente create(Cliente cliente){
         return clienteRepository.save(cliente);
     }

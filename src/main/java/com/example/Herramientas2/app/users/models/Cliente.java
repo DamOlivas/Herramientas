@@ -14,9 +14,9 @@ public class Cliente {
     private Integer id;
     @Column(name = "Nombre",columnDefinition = "varchar (50)", nullable = false, unique = true)
     private String Nombre;
-    @Column(name = "Direccion", columnDefinition = "varchar (50)", nullable = false, unique = true)
+    @Column(name = "Direccion", columnDefinition = "varchar (50)")
     private String Direccion;
-    @Column(name = "Factura", columnDefinition = "Integer", nullable = false, unique = true)
+    @Column(name = "Factura", columnDefinition = "Integer",  nullable = false)
     private Integer Factura;
 
     public Cliente(){
@@ -39,6 +39,6 @@ public class Cliente {
     }
 
     public void setFactura(Integer factura) {
-        Factura = factura;
+        this.Factura = factura;
     }
 }
